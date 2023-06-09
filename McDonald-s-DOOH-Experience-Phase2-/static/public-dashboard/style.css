@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 180px 1fr;
+  /* aqui cambio el ancho del sidebar*/
+  grid-template-rows: 80px 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+}
+
+.header {
+  grid-area: header;
+  margin-left: 40px;
+  /* Se cambian las margenes del header*/
+  margin-right: 40px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main {
+  grid-area: main;
+  background-color: #f9f9f9;
+  margin-left: 40px;
+  margin-right: 40px;
+  /* Aqui tambien se debe cambiar para coincidan las margenes del header*/
+
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 200px 1fr;
+  column-gap: 50px;
+  row-gap: 10px;
+
+  grid-template-areas:
+    "c1 c1 c1"
+    "c2 c2 c3"
+    "c4 c6 c7"
+    "c5 c5 c5";
+}
+
+.stat-bar {
+  grid-area: c1;
+  display: flex;
+  align-items: center;
+}
+
+.int-time-container {
+  display: flex;
+  padding-top: 13px;
+}
+
+.int-time-container p {
+  color: #212121;
+  font-size: 14px;
+}
+
+.linechart-container {
+  background-color: #FFFFFF;
+  border: 1px solid #EFF0F6;
+  border-radius: 15px;
+  grid-area: c2;
+}
+.barchart-container {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  border: 1px solid #EFF0F6;
+  grid-area: c3;
+}
+
+.charts-container {
+  margin : 20px;
+  height: 200px;
+}
+
+.charts-header {
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px 0px;
+  border-bottom: 1px solid #E4E5E7;
+}
+
+.charts-header p {
+  color: #4D4D4D;
+  font-weight: 500;
+}
+
+
+.total-leads-container {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  border: 1px solid #EFF0F6;
+  grid-area: c4;
+}
+
+.link-event-container {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  border: 1px solid #EFF0F6;
+  grid-area: c6;
+}
+.convertion-rate-container {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  border: 1px solid #EFF0F6;
+  grid-area: c7;
+
+}
+
+.stats-container {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+.stats-container p {
+  color: #4D4D4D;
+ font-size: 30px;
+ font-weight: 600;
+}
+
+.sites-container {
+  background-color: #ffff;
+  grid-area: c5;
+  border: 1px solid #EFF0F6;
+  border-radius: 15px;
+}
+
+.mc-site {
+  margin: 30px 20px;
+  display: flex;
+}
+
+.mc-lugar {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.hijo {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+#icon-select {
+  color: rgba(0, 0, 0, 0.3);
+}
+#status {
+  color: #15E011;
+  font-size: 12px;
+}
+
+.img-site-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+.text-container p {
+  font-size: small;
+  font-weight: 600;
+}
+.text-container span {
+  color:rgba(0, 0, 0, 0.5);
+  font-size: 12px
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #ffff;
+  box-shadow: 1px 1px 10px 1px rgba(205, 205, 205, 0.28);
+  border-radius: 0px 15px 15px 0px;
+}
+
+.header-container {
+  display: flex;
+  max-height: 80px;
+  justify-content: space-between;
+}
+
+.reports-container {
+  display: flex;
+  align-items: center;
+}
+
+.reports-container h4 {
+  color: #212121;
+  font-size: 20px;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+
+.user-container img {
+  height: 65%;
+  border-radius: 100%;
+}
+
+.user-text-container h5 {
+  color: #212121;
+  font-size: 15px;
+}
+
+.user-text-container p {
+  color: #212121;
+  font-size: small;
+}
+
+.logo-container {
+  display: flex;
+  height: 70px;
+  margin-left: 25px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: left;
+}
+
+.logo-container img {
+  height: 50%;
+}
+
+.list-container {
+  padding: 15px;
+  margin-bottom: 280px;
+}
+
+.list-container ul li {
+  list-style-type: none;
+  margin: 0.5rem auto;
+  line-height: 50px;
+}
+
+.list-container ul li a {
+  color: #212121;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+
+.list-container ul li a:hover {
+  background-color: #1891F6;
+  color: #fff;
+}
+
+.list-container ul li a i {
+  min-width: 40px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+
+/*
+:root{
+======== COLORS ========= 
+  --primary-color: #1891F6;
+  --color-info-dark: #7d8da1;
+  --color-info-light: #dce1eb;
+  --color-dark: #363949; 
+  --color-dark-variant: #677483;
+
+  --sidebar-color: #fff;
+  --background-color: #f6f6f9;
+  --color-light: rgba(64, 127, 235, 0.18);
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 3rem;
+  -padding-1: 1.2rem;
+
+  --box-shadow: 0 1rem 3rem var(--color-light);
+}
+
+* {
+
+  margin:0;
+  padding:0;
+  outline:0;
+  appearance: none;
+  border:0;
+  text-decoration: none;
+  font-family: "Poppins", "sans-serif";
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 0.88rem;
+  background: var(--background-color);
+  user-select: none;
+  overflow-x: hidden;
+  color: var(--color-dark);
+
+}
+
+.container{
+  display:grid;
+  width: 96%;
+  margin: 0 auto;
+  gap: 1.8rem;
+  grid-template-columns: 14rem auto 23rem;
+}
+
+a{
+  color: var(--color-dark)
+}
+
+img{
+  display:block;
+  width: 100%;
+}
+
+h1{
+
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: var(--color-dark)
+}
+
+h2{
+  font-size: 1.4rem;
+}
+
+h3{
+  font-size: 0.87rem;
+}
+
+h4{
+  font-size: 0.8rem;
+}
+
+h5{
+  font-size: 0.77rem;
+}
+
+.profile-photo{
+  width: 2.8rem;
+  height:2.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+p{
+  color: var(--color-dark)
+}
+
+b {
+  color: var(--color-dark)
+}
+
+
+aside{
+  height: 100vh;
+
+}
+
+aside .top{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.4rem;
+}
+
+aside .logo{
+  display: flex;
+  gap: 0.8rem;
+
+}
+
+aside .logo img {
+  width: 2.2rem;
+  height: 2rem;
+}
+
+aside .close{
+  display:none; 
+}
+
+ ===================================== SIDEBAR =========================================== 
+
+aside .sidebar { 
+  display: flex;
+  flex-direction: column;
+  height: 86vh;
+  position: relative;
+  top: 3rem;
+}
+
+aside h3{
+  font-weight: 500;
+}
+
+aside .sidebar a{
+  display: flex;
+  color: var(--color-info-dark);
+  margin-left: 1.5rem;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+  height: 3.7rem;
+  transition: all 300ms ease;
+}
+
+aside .sidebar a span{
+  font-size: 1.6rem;
+  transition: all 300ms ease;
+}
+
+aside .sidebar a.active{
+  background: var(--color-light);
+  color: var(--primary-color);
+  margin-left: 0;
+}
+
+aside .sidebar a.active:before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background: var(--primary-color);
+
+}
+
+aside .sidebar a.active span{
+  color:var(--primary-color);
+  margin-left: calc(1rem - 3 px);
+}
+
+aside .sidebar a:hover{
+  color:var(--primary-color);
+}
+
+aside .sidebar a:hover span {
+  margin-left: 1rem;
+}
+
+aside .logo h2 {
+  display: none;
+}
+
+
+
+ ======================================== DASHBOARD ========================================= 
+
+main {
+  margin-top: 1.4rem;
+}
+
+main .insights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+main .insights > div {
+  background: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  margin-top: 1rem;
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
+  
+}
+
+main .insights > div:hover {
+  box-shadow: none;
+}
+
+
+section {
+  margin-top: 1rem;
+}
+
+section .bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+main .bottom > div {
+  background: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  margin-top: 1rem;
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
+  
+}
+
+main .bottom > div:hover {
+  box-shadow: none;
+}
+
+
+section .table   {
+  display: flex;
+  flex-direction:column-reverse;
+  width: 100%;
+}
+
+section.tr  {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  gap: 8px;
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+section .td  {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+}
+
+*/

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard app</title>
+
+  <!-- MATERIAL ICONS-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <!--STYLESHEET-->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-container">
+      <div class="reports-container">
+        <h4>Reports</h4>
+      </div>
+      <div class="user-container">
+        <img src="./img/profile.png" alt="Profile Pic">
+        <div class="user-text-container">
+          <h5>David Giraldo</h5>
+          <p>correo@hotmail.com</p>
+        </div>
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+  <main class="main">
+    <div class="stat-bar">
+      <div class="int-time-container">
+        <p>Time of interaction:</p>
+      </div>
+    </div>
+
+    <div class="linechart-container">
+      <div class="charts-header">
+        <p>Site traffic</p>
+      </div>
+      <div class="charts-container">
+        <canvas id="my-line-chart"></canvas>
+      </div>
+    </div>
+
+    <div class="barchart-container">
+      <div class="charts-header">
+        <p>Frequency of use</p>
+      </div>
+      <div class="charts-container">
+        <canvas id="my-bar-chart"></canvas>
+      </div>
+    </div>
+
+    <div class="total-leads-container">
+      <div class="charts-header">
+        <p>Total leads</p>
+      </div>
+      <div id="total-leads" class="stats-container">
+      </div>
+    </div>
+
+    <div class="link-event-container">
+      <div class="charts-header">
+        <p>Experience interactions</p>
+      </div>
+      <div id="total-ints" class="stats-container">
+      </div>
+    </div>
+
+    <div class="convertion-rate-container">
+      <div class="charts-header">
+        <p>Convertion rate</p>
+      </div>
+      <div id="convertion-rate"  class="stats-container">
+      </div>
+    </div>
+
+    <div class="sites-container">
+      <div class="charts-header">
+        <p>Sites</p>
+      </div>
+      <div class="mc-site">
+        <div class="mc-lugar">
+          <div>
+            <i id="icon-select" class="material-icons">radio_button_unchecked</i>
+          </div>
+          <div class="img-site-container">
+            <div>
+              <img src="./img/mclogored.png" alt="Mc`logo Sites">
+            </div>
+            <div class="text-container">
+              <p>McDonalds</p>
+              <span>
+                Cañasgordas
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="hijo">
+          <i id="status" class="material-icons">circle</i>
+        </div>
+        <div class="hijo">
+          <p>2,000</p>
+        </div>
+        <div class="hijo">
+          <p>20</p>
+        </div>
+        <div class="hijo">
+          40%
+        </div>
+        <div class="hijo">
+          <div>
+            <i class="material-icons">more_horiz</i>
+          </div>
+        </div>
+      </div>
+      <div class="mc-site">
+        <div class="mc-lugar">
+          <div>
+            <i id="icon-select" class="material-icons">radio_button_unchecked</i>
+          </div>
+          <div class="img-site-container">
+            <div>
+              <img src="./img/mclogored.png" alt="Mc`logo Sites">
+            </div>
+            <div class="text-container">
+              <p>McDonalds</p>
+              <span>
+                Plaza de toros
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="hijo">
+          <i id="status" class="material-icons">circle</i>
+        </div>
+        <div class="hijo">
+          <p>2,000</p>
+        </div>
+        <div class="hijo">
+          <p>20</p>
+        </div>
+        <div class="hijo">
+          40%
+        </div>
+        <div class="hijo">
+          <i class="material-icons">more_horiz</i>
+        </div>
+      </div>
+      <div class="mc-site">
+        <div class="mc-lugar">
+          <div>
+            <i id="icon-select" class="material-icons">radio_button_unchecked</i>
+          </div>
+          <div class="img-site-container">
+            <div>
+              <img src="./img/mclogored.png" alt="Mc`logo Sites">
+            </div>
+            <div class="text-container">
+              <p>McDonalds</p>
+              <span>
+                Chipichape
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="hijo">
+          <i id="status" class="material-icons">circle</i>
+        </div>
+        <div class="hijo">
+          <p>2,000</p>
+        </div>
+        <div class="hijo">
+          <p>20</p>
+        </div>
+        <div class="hijo">
+          40%
+        </div>
+        <div class="hijo">
+          <i class="material-icons">more_horiz</i>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="sidebar">
+    <div class="logo-container">
+      <img src="./img/mlogo.png" alt="Mc`logo">
+    </div>
+    <div class="list-container">
+      <ul>
+        <li>
+          <a href="#">
+            <i class="material-icons">trending_up</i><span class="nav-span">Reports</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="material-icons">settings</i><span class="nav-span">Settings</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="sidebar-deco">
+      <img src="./img/sidebarDeco.png" alt="Sidebar Decoration">
+    </div>
+  </section>
+
+  <!--
+
+    <div class="container">
+      
+    <aside>
+        
+        <div class="top">
+        <div class="logo">
+        <img src="./img/mlogo.png">
+        </div>
+
+        <div class="close" id="close-btn">
+        <span class="material-symbols-rounded">close</span>
+        </div>
+        </div>
+
+        <div class="sidebar">
+        <a href="" class="active">
+        <span 
+        class="material-symbols-rounded">dashboard</span>
+        <h3>Reports</h3>
+        </a>
+
+        <a href="#">
+        <span 
+        class="material-symbols-rounded"> settings </span>
+        <h3>Settings</h3>
+        </a>
+        </div>
+      </aside>
+
+    ------DASHBOARD----------
+
+    <main>
+
+        <h1>Reports</h1>
+
+        <div class="insights"> 
+
+        <div class="chart-container">
+
+          <canvas id="myDoughnutChart"></canvas>
+        
+        </div>
+    
+        <div class="bar-container">
+         
+          <canvas id="myBarChart"></canvas>   
+        
+        </div>
+
+         <div class="leads"> 
+          <h2>Leads</h2>
+            <thead>
+              <tr>
+                <td>Total leads</td>
+              
+          
+                <td>Convertion Rate</td>
+            
+                <th></th>
+              </tr>
+              <thead>
+              <tbody>
+                <tr>
+                  <td>Link Event</td>
+               </tbody>
+            </thead>
+         </div>
+          
+        <section>
+
+          <div class="bottom">
+            
+          <div class="leads-table">
+  
+          <h2>Last 5 leads</h2>
+          <table>
+          </table>
+          
+        </div>
+      </div>
+
+      </section>
+      
+    </main> 
+  -->
+
+  <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+  integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+  crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="view.js"></script>
+  <script defer src="controller.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="from-container">
+
+        <form id ="myform">
+            <div class="img-container">
+                <img src = "img/mlogo.png" alt="McLogo" />            
+            </div>
+
+            <div class="text-container">
+                <p>Llena estos <b>datos</b></p>
+            </div>
+            <div>
+               <b> <label for="name">Nombre Completo</label> </b>
+                <input type="text" id="name" class="form-input" required>
+            </div>
+            <div>
+              <b> <label for="email">Correo Eléctronico</label>  </b>
+                <input type="email" id="email" class="form-input" required>
+            </div>
+              <div>
+            <b><label for="number">Número de Celular</label> </b>
+                <input type="tel" id="number" class="form-input" required>
+              </div>
+            <div>
+                <input type="checkbox" id="privacy-agreement" class="form-checkbox" required>
+                <label for="privacy-agreement"> He leído y acepto los términos y condiciones.</label>
+            </div>
+            
+            <button type="submit" id="submit-btn" class="form-btn" disabled><b>Enviar</b></button>
+          
+          
+        </form>
+
+    </div>
+    <script defer src="script.js"></script>
+ 
+
+</body>
+
+</html>

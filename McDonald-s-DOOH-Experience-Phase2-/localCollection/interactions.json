@@ -1,0 +1,109 @@
+{
+  "interactions": [
+    {
+      "id": 1,
+      "useDay": "THU",
+      "intHour": "5pm"
+    },
+    {
+      "id": 2,
+      "useDay": "THU",
+      "intHour": "6pm"
+    },
+    {
+      "id": 3,
+      "useDay": "THU",
+      "intHour": "6pm"
+    },
+    {
+      "id": 4,
+      "useDay": "THU",
+      "intHour": "7pm"
+    },
+    {
+      "id": 5,
+      "useDay": "FRI",
+      "intHour": "7pm"
+    },
+    {
+      "id": 6,
+      "useDay": "FRI",
+      "intHour": "7pm"
+    },
+    {
+      "id": 7,
+      "useDay": "FRI",
+      "intHour": "8pm"
+    },
+    {
+      "id": 8,
+      "useDay": "FRI",
+      "intHour": "-9pm"
+    },
+    {
+      "id": 9,
+      "useDay": "FRI",
+      "intHour": "-9pm"
+    },
+    {
+      "id": 10,
+      "useDay": "FRI",
+      "intHour": "-9pm"
+    },
+    {
+      "id": 11,
+      "useDay": "FRI",
+      "intHour": "-9pm"
+    },
+    {
+      "id": 12,
+      "useDay": "FRI",
+      "intHour": "-8pm"
+    },
+    {
+      "id": 13,
+      "useDay": "FRI",
+      "intHour": "-8pm"
+    },
+    {
+      "id": 14,
+      "useDay": "FRI",
+      "intHour": "-7pm"
+    },
+    {
+      "id": 15,
+      "useDay": "FRI",
+      "intHour": "-7pm"
+    },
+    {
+      "id": 16,
+      "useDay": "FRI",
+      "intHour": "-7pm"
+    },
+    {
+      "id": 17,
+      "useDay": "FRI",
+      "intHour": "-7pm"
+    },
+    {
+      "id": 18,
+      "useDay": "FRI",
+      "intHour": "-7pm"
+    },
+    {
+      "id": 19,
+      "useDay": "FRI",
+      "intHour": "-7pm"
+    },
+    {
+      "id": 20,
+      "useDay": "FRI",
+      "intHour": "-7pm"
+    },
+    {
+      "id": 21,
+      "useDay": "FRI",
+      "intHour": "-7pm"
+    }
+  ]
+}
